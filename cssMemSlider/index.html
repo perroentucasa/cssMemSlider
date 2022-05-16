@@ -17,18 +17,55 @@
   </head>
   <body>
     <div class="slider">
+      <input
+        class="slider__radio"
+        type="radio"
+        id="slide-1"
+        name="same-name"
+        checked
+      />
+      <input class="slider__radio" type="radio" id="slide-2" name="same-name" />
+      <input class="slider__radio" type="radio" id="slide-3" name="same-name" />
+      <input class="slider__radio" type="radio" id="slide-4" name="same-name" />
+
       <div class="slider__slides">
-        <div class="slider__slide-1">1</div>
-        <div class="slider__slide-2">2</div>
-        <div class="slider__slide-3">3</div>
-        <div class="slider__slide-4">4</div>
+        <div class="slider__slide-1 slider__slide">
+          <img class="slider__picture" src="images/pic11.jpg" alt="Picture 1" />
+        </div>
+        <div class="slider__slide-2 slider__slide">
+          <img class="slider__picture" src="images/pic21.jpg" alt="Picture 2" />
+        </div>
+        <div class="slider__slide-3 slider__slide">
+          <img class="slider__picture" src="images/pic31.jpg" alt="Picture 3" />
+        </div>
+        <div class="slider__slide-4 slider__slide">
+          <img class="slider__picture" src="images/pic41.jpg" alt="Picture 4" />
+        </div>
       </div>
-      <div class="slider__dots">Dots</div>
-      <div class="slider__text">
-        <div class="slider__text-1">Text 1</div>
-        <div class="slider__text-2">Text 2</div>
-        <div class="slider__text-3">Text 3</div>
-        <div class="slider__text-4">Text 4</div>
+
+      <div class="slider__bottom">
+        <div class="slider__text">
+          <div class="slider__text-1 text">
+            Многие жалуются на свою внешность, но на мозги не жалуется никто
+          </div>
+          <div class="slider__text-2 text">
+            Я полагаю, что европейцы опасны и волосаты
+          </div>
+          <div class="slider__text-3 text">
+            Люди-идиоты плюс алкоголь — вот вам рецепт любой потасовки
+          </div>
+          <div class="slider__text-4 text">
+            Люди, считающие, что деньги способны сделать все, сами способны все
+            сделать за деньги
+          </div>
+        </div>
+
+        <div class="slider__dots">
+          <label for="slide-1" class="slider__label label-1"></label>
+          <label for="slide-2" class="slider__label label-2"></label>
+          <label for="slide-3" class="slider__label label-3"></label>
+          <label for="slide-4" class="slider__label label-4"></label>
+        </div>
       </div>
     </div>
   </body>
